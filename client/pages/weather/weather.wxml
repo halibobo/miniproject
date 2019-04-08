@@ -1,0 +1,52 @@
+
+<view>
+  <view class="userinfo" bindtap="refresh">
+  </view>
+   <view  class='switch-city' bindtap='gotoSelectCity'>
+    <text>{{weather.city}}-切换城市</text>
+  </view>
+ <scroll-view scroll-x="false" style=" white-space: nowrap;">
+    <view class='air-guide'>
+      <view class='air-item' wx:if="{{airLoad}}" wx:for="{{airData}}" wx:key="air" wx:for-item="item">
+        <image class='air-image'  src="./image/{{item.wea_img}}.png"></image>
+          <view class='.air-column'>
+            <text  class='air-row  air-font'>{{item.day}}</text>
+            <text class='air-row air-font yellow' wx:if="{{airLoad}}" >{{item.wea}}{{item.tem}}</text>
+            <text class='air-row yellow air-font' wx:if="{{airLoad}}" >{{item.tem1}}~{{item.tem2}}</text>
+        </view>
+      </view>
+       
+    </view>
+  </scroll-view>
+  
+  <view class='guide'>
+   <text class='city-info' wx:if="{{loaded}}" >空气质量指数指数（PM2.5）：{{weather.aqi}}          </text>
+    <text wx:if="{{!loaded&&!remarkable}}">加载中...</text>
+   
+    <text class='basic-info' wx:if="{{remarkable}}" >{{remark.impx}}</text>
+    <text class='basic-info' wx:if="{{remarkable}}" >{{remark.advc}}</text>
+    <text class='basic-info' wx:if="{{remarkable}}" >{{remark.impxct}}</text>
+  </view>
+  
+ 
+  <view class="box box-3">
+    <view wx:for="{{weather.data}}" wx:key="add" wx:for-item="item">
+      <view class="box-item floor{{item.lv}}">
+          <text class='big-font' >{{item.aqi}}</text>
+          <text class='small-font'>{{item.add}}</text>
+      </view>
+    </view>
+  </view>
+  
+  <view class='guide'>
+   
+     <text  class='city-info' wx:if="{{remarkable}}">建议：</text>
+    <view wx:if="{{airLoad}}"  wx:for="{{airData[0].index}}" wx:key="en" wx:for-item="item">
+      <text class='basic-info' >{{item.title}}({{item.level?item.level:"无"}})：{{item.desc}}</text>
+    </view>
+     <text  class='city-info' wx:if="{{remarkable}}">综合指数：</text>
+    <view wx:if="{{remarkable}}" wx:for="{{remark.data}}" wx:key="en" wx:for-item="item">
+      <text class='basic-info' >{{item.en}}({{item.cn}})：{{item.val}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+{
+	"miniprogramRoot": "client/",
+	"qcloudRoot": "server/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": false
+	},
+	"appid": "wx1a0999dfe47782c5",
+	"projectname": "tools",
+	"condition": {}
+}

@@ -1,0 +1,141 @@
+/* pages/weather/weather.wxss */
+.city-info{
+  padding: 10rpx 0;
+  font-size: 34rpx;
+  line-height: 36rpx;
+  width: 100%;
+}
+
+.box {
+  background-color: white;
+  margin: 0 0 5rpx;
+  display: flex;
+  padding: 25rpx;
+}
+.reverse{
+  flex-wrap: wrap-reverse;
+}
+.box-item {
+  width: 160rpx;
+  height: 160rpx;
+  line-height: 150rpx;
+  margin: 5rpx;
+  vertical-align: middle;
+  color: white;
+  text-align: center;
+  
+}
+.big-font{
+ font-size: 48rpx;
+ width: 100%;
+}
+
+.middle-font{
+ font-size: 38rpx;
+}
+
+.small-font{
+ font-size: 22rpx;
+ width: 100%;
+}
+
+
+.floor1{
+  background-color: #30945d;
+}
+.floor2{
+  background-color: #bdb107;
+}
+.floor3{
+  background-color: #ff6a06;
+}
+.floor4{
+  background-color: #dd151f;
+}
+.floor5{
+  background-color: #dd151f;
+}
+.floor6{
+  background-color: #dd151f;
+}
+.floor7{
+  background-color: #dd151f;
+}
+.floor8{
+  background-color: #dd151f;
+}
+.floor9{
+  background-color: #444444;
+}
+.floor10{
+  background-color: #444444;
+}
+
+.box-3 {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.guide {
+    width: 100%;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.switch-city{
+  display: flex-end;
+  text-align: right;
+  margin-right: 10rpx;
+  font-size: 26rpx;
+  padding: 5rpx;
+  margin-top: 15rpx;
+}
+
+.basic-info{
+    margin-top: 10rpx;
+    font-size: 26rpx;
+    line-height: 36rpx;
+    color: #666;
+}
+.air-guide{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+.air-image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+  flex-direction:column;
+  flex-wrap:wrap;
+  display: flex;
+}
+.air-item{
+  margin: 10rpx;
+}
+.air-row{
+  flex-direction:row;
+  display: flex;
+}
+.air-column{
+  flex-direction:column;
+  display: flex;
+}
+.air-font{
+  font-size: 30rpx;
+}
+.green{
+  color: #30945d;
+}
+.tip{
+  color: #f1430e
+}
+.yellow{
+  color: #cf4711
+}

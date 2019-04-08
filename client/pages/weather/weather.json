@@ -1,0 +1,5 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "空气质量PM2.5",
+  "enablePullDownRefresh": true
+}

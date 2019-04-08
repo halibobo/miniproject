@@ -1,0 +1,18 @@
+<!--pages/days/days.wxml-->
+<text bindtap='onSave'>存\n</text>
+<text bindtap='onGetData'>取出\n</text>
+<text bindtap='dateTest'>dateTest</text>
+<view class="section">
+  <view class="section__title">日期选择器</view>
+  <picker
+    mode="date"
+    value="{{date}}"
+    start="1900-01-01"
+    end="2100-12-31"
+    bindchange="bindDateChange"
+  >
+    <view class="picker">
+      当前选择: {{date}}
+    </view>
+  </picker>
+</view>
